@@ -1,6 +1,6 @@
 <?php
 	// Edit these for each server
 	$ServerName        = "Server Name";
-	$ServerRSSLink     = "http://192.168.1.1/rss/status.xml";
+	$ServerRSSLink     = "http://server/status.xml";
 	$ServerDescription = "Server Description";
 ?>

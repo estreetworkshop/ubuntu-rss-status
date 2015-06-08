@@ -5,10 +5,10 @@
 	$ServerDescription = "";
 	
 	// List all the RSS Feeds you would like for this server
-	Module_AptUpdate($StatusFeed, $ServerName);
-	Module_AptCheck($StatusFeed, $ServerName);
-	Module_CheckDiskSpace($StatusFeed, $ServerName, "/", 90);
-	Module_CheckDiskSpace($StatusFeed, $ServerName, "/var/www/myapps/camlog/img", 90);
-	Module_VerifySQLBackup($StatusFeed, $ServerName, "/backup/data", "owncloud-sqlbkp");
-	Module_RebootCheck($StatusFeed, $ServerName);	
+	//Module_AptUpdate($StatusFeed, $ServerName);
+	//Module_AptCheck($StatusFeed, $ServerName);
+	//Module_CheckDiskSpace($StatusFeed, $ServerName, "/", 90);
+	//Module_RebootCheck($StatusFeed, $ServerName);	
+	//Module_FreshClam($StatusFeed, $ServerName);
+	//Module_ClamScan($StatusFeed, $ServerName, "/var/www/", "test")
 ?>

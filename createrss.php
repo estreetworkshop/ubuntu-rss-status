@@ -24,7 +24,7 @@
 	  	
 	echo "----------------------------------------\n";
 	echo "Checking Lock File...";
-	if(!file_exists("createrss.lock"))
+	if(!file_exists("createrss.lock")) 
 	{
 		// If No Lock File
 		echo "No Lock File...\n";
