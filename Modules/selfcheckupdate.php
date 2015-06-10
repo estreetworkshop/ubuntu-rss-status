@@ -5,10 +5,12 @@
 		echo "Checking to see if update required...\n";
 		// Update Git
 		exec("cd ". $Directory. " && git remote update", $output, $result);
+		
 		// Get Installed Revision Number		
 		exec("cd ". $Directory. " && git rev-parse @{0}", $output, $result);
 		$CurrentRev = $output[1];		
 		echo "Current=". $CurrentRev ."\n";
+		
 		// Get Latest Revision Number
 		exec("cd ". $Directory. " && git rev-parse @{u}", $output, $result);
 		$RemoteRev = $output[1];		
@@ -16,7 +18,7 @@
 		
 		if($CurrentRev === $RemoteRev)
 		{
-			echo "Version Already Up to date". $RemoteRev ."\n";
+			echo "Version Already Up to date\n";
 		}
 		else
 		{
@@ -37,6 +39,9 @@
 			}
 			else
 			{
+				exec("cd ". $Directory. " && git fetch origin master", $output, $result);
+				exec("cd ". $Directory. " && git reset --hard FETCH_HEAD", $output, $result);
+				
 				echo "Adding RSS Item for installed update\n";
 				//Create an empty FeedItem
 				$newItem = $StatusFeed->createNewItem();
