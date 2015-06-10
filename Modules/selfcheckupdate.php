@@ -13,7 +13,7 @@
 		
 		// Get Latest Revision Number
 		exec("cd ". $Directory. " && git rev-parse @{u}", $output, $result);
-		$RemoteRev = $output[1];		
+		$RemoteRev = $output[2];		
 		echo "Remote=". $RemoteRev ."\n";
 		
 		if($CurrentRev === $RemoteRev)
