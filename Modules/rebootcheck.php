@@ -3,7 +3,7 @@
 	{
 		echo "----------------------------------------\n";
 		echo "Checking to see if reboot required...\n";
-		
+	
 		if (file_exists("/var/run/reboot-required") === true)
 		{
 			echo "Adding RSS Item for Reboot\n";
