@@ -1,14 +1,27 @@
 <?php
-	// Edit these for each server
-	$ServerName        = "OwnCloud";
-	$ServerRSSLink     = "http://192.168.1.114/rss/";
-	$ServerDescription = "";
-	
 	// List all the RSS Feeds you would like for this server
+	
+	// Automatically install updates for Linux
 	//Module_AptUpdate($StatusFeed, $ServerName);
+	
+	// Check for Updates for Linux
 	//Module_AptCheck($StatusFeed, $ServerName);
+	
+	// Check for Disk Space Free
 	//Module_CheckDiskSpace($StatusFeed, $ServerName, "/", 90);
+	
+	// Check to see if a reboot is needed
 	//Module_RebootCheck($StatusFeed, $ServerName);	
+	
+	// Update the ClavAV Virus Definitions
 	//Module_FreshClam($StatusFeed, $ServerName);
-	//Module_ClamScan($StatusFeed, $ServerName, "/var/www/", "test")
+	
+	// Run a ClamAV Virus Scan
+	//Module_ClamScan($StatusFeed, $ServerName, "/var/www/", "test");
+	
+	// Check to see if the RSS Feed Software is up to date and update if necessary
+	//Module_SelfCheckUpdate($StatusFeed, $ServerName, "/var/www/rss", true);
+	
+	// Check to see if a ZPOOL is functioning properly
+	//Module_ZpoolStatus($StatusFeed, $ServerName, "backup");
 ?>
