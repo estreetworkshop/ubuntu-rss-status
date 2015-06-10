@@ -34,4 +34,4 @@ Run "php createrss.php" from the command line.  You can watch the output and see
 Check to see if a reboot is required
 Check to see if there are any updates
 Automatically isntall any updates
-
+Check for ZFS Zpool Errors
