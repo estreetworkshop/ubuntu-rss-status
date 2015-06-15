@@ -33,7 +33,7 @@ Add the createrss.php to your crontab.  I suggest running this once a day.  Old 
 Run "php createrss.php" from the command line.  You can watch the output and see if there are any errors.
 
 # Modules
-*Check to see if a reboot is required
-*Check to see if there are any updates
-*Automatically isntall any updates
-*Check for ZFS Zpool Errors
+* Check to see if a reboot is required
+* Check to see if there are any updates
+* Automatically isntall any updates
+* Check for ZFS Zpool Errors
