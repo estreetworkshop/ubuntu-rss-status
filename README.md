@@ -6,19 +6,21 @@ Generate a Status RSS Feed for your Ubuntu Server.  This was created so that iss
 
 Run the following command to get the required software to run ubuntu-rss-status
 
-apt-get install apache2 php5 update-notifier-common
+'apt-get install apache2 php5 update-notifier-common'
 
 This has been tested on Ubuntu 12.04 and 14.04.
 
 # Install
 
+## Download
+
 Download into your html folder.
 
-# Configure server.php
+## Configure server.php
 
 Rename server.php.example to server.php.  Edit server.php to reflect your server settings.
 
-# Configure config.php
+## Configure config.php
 
 Rename config.php.example to config.php.  Uncomment and add in the modules you want to use.  You can run the modules multiple times (for example checking disk space on multiple hard drives).
 
