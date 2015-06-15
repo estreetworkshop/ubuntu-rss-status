@@ -8,7 +8,7 @@ Run the following command to get the required software to run ubuntu-rss-status
 
 `apt-get install apache2 php5 update-notifier-common`
 
-This has been tested on Ubuntu 12.04 and 14.04.
+This has been tested on Ubuntu 12.04 and 14.04 and on Raspberry Pi Wheezy
 
 # Install
 
@@ -30,7 +30,7 @@ Add the createrss.php to your crontab.  I suggest running this once a day.  Old 
 
 #### Test Configuration
 
-Run "php createrss.php" from the command line.  You can watch the output and see if there are any errors.
+Run `php createrss.php` from the command line.  You can watch the output and see if there are any errors.
 
 # Modules
 * Check to see if a reboot is required
