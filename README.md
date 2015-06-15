@@ -24,16 +24,16 @@ Rename server.php.example to server.php.  Edit server.php to reflect your server
 
 Rename config.php.example to config.php.  Uncomment and add in the modules you want to use.  You can run the modules multiple times (for example checking disk space on multiple hard drives).
 
-# Configure crontab
+#### Configure crontab
 
 Add the createrss.php to your crontab.  I suggest running this once a day.  Old RSS items are cleared out of the XML file after running the command.  So your RSS feed reader must check for updates more often than you run the crontab. 
 
-# Test Configuration
+#### Test Configuration
 
 Run "php createrss.php" from the command line.  You can watch the output and see if there are any errors.
 
 # Modules
-Check to see if a reboot is required
-Check to see if there are any updates
-Automatically isntall any updates
-Check for ZFS Zpool Errors
+*Check to see if a reboot is required
+*Check to see if there are any updates
+*Automatically isntall any updates
+*Check for ZFS Zpool Errors
