@@ -2,6 +2,8 @@
 	function Module_AptCheck($StatusFeed, $ServerName)
 	{
 		echo "----------------------------------------\n";
+		echo "Running Apt-get update\n";
+		$output = shell_exec("apt-get update");			
 		echo "Checking for updates...\n";
 		$output = shell_exec("/usr/lib/update-notifier/apt-check --human-readable");
 		$arr = explode("\n", $output);	

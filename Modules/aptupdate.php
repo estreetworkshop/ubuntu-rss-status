@@ -2,7 +2,9 @@
 	function Module_AptUpdate($StatusFeed, $ServerName)
 	{
 		echo "----------------------------------------\n";
-		echo "Checking for updates...\n";
+		echo "Running Apt-get update\n";
+		$output = shell_exec("apt-get update");		
+		echo "Checking for updates...\n";		
 		$output = shell_exec("/usr/lib/update-notifier/apt-check --human-readable");
 		//$output = "0 fds\n1 fd\n";
 		$arr = explode("\n", $output);	
@@ -17,8 +19,6 @@
 		if($packageupdates > 0 or  $securityupdates > 0)
 		{
 			echo "There are updates to install...\n";
-			echo "Running Apt-get update\n";
-			$output = shell_exec("apt-get update");
 			echo "Running Apt-get dist-upgrade\n";
 			$output = shell_exec("apt-get dist-upgrade -y");
 		
