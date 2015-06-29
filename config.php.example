@@ -26,5 +26,5 @@
 	//Module_ZpoolStatus($StatusFeed, $ServerName, "backup");
 	
 	// Create an SQL Backup (useful for daily incremental backups)
-	function Module_CreateSQLBackup($StatusFeed, $ServerName, $location, $dbname, $dbuser, $dbpass)
+	//Module_CreateSQLBackup($StatusFeed, $ServerName, $location, $dbname, $dbuser, $dbpass)
 ?>
