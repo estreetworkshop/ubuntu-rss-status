@@ -6,7 +6,7 @@ Generate a Status RSS Feed for your Ubuntu Server.  This was created so that iss
 
 Run the following command to get the required software to run ubuntu-rss-status
 
-`apt-get install apache2 php5 update-notifier-common`
+`apt-get install apache2 php5 update-notifier-common git`
 
 This has been tested on Ubuntu 12.04 and 14.04 and on Raspberry Pi Wheezy
 
