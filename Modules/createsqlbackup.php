@@ -3,7 +3,7 @@
 	{
 		echo "----------------------------------------\n";
 		echo "Create SQL Backup...\n";
-		shell_exec("rm /backup/data/*.bak");
+		shell_exec("rm ". $location ."/*.bak");
 		exec("mysqldump --lock-tables -h localhost -u " . $dbuser . " -p". $dbpass. " " . $dbname . " > ". $location . "/".$dbname."-sqlbkp_`date +\"%Y%m%d\"`.bak 2>&1", $output, $ret);
 		
 		if( $ret !== 0 )
