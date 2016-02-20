@@ -33,10 +33,10 @@ Rename config.php.example to config.php.  Uncomment and add in the modules you w
 Add the createrss.php to your crontab.  I suggest running this once a day.  Old RSS items are cleared out of the XML file after running the command.  So your RSS feed reader must check for updates more often than you run the crontab. If you add this file it will run it once per day.
 
 For 12.04 and Wheezy
-'$0  0    * * *   root    cd /var/www/rss && php createrss.php'
+`$0  0    * * *   root    cd /var/www/rss && php createrss.php`
 
 For 14.04 and Jessie
-'$0  0    * * *   root    cd /var/www/html/rss && php createrss.php'
+`$0  0    * * *   root    cd /var/www/html/rss && php createrss.php`
 
 #### Test Configuration
 
