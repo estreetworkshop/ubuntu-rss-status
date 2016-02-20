@@ -8,7 +8,11 @@ Run the following command to get the required software to run ubuntu-rss-status
 
 `apt-get install apache2 php5 update-notifier-common git`
 
-This has been tested on Ubuntu 12.04 and 14.04 and on Raspberry Pi Wheezy
+This has been tested on:
+Ubuntu 12.04
+Ubuntu 14.04
+Raspbian Wheezy
+Raspbian Jessie
 
 # Install
 
@@ -26,7 +30,13 @@ Rename config.php.example to config.php.  Uncomment and add in the modules you w
 
 #### Configure crontab
 
-Add the createrss.php to your crontab.  I suggest running this once a day.  Old RSS items are cleared out of the XML file after running the command.  So your RSS feed reader must check for updates more often than you run the crontab. 
+Add the createrss.php to your crontab.  I suggest running this once a day.  Old RSS items are cleared out of the XML file after running the command.  So your RSS feed reader must check for updates more often than you run the crontab. If you add this file it will run it once per day.
+
+For 12.04 and Wheezy
+'$0  0    * * *   root    cd /var/www/rss && php createrss.php'
+
+For 14.04 and Jessie
+'$0  0    * * *   root    cd /var/www/html/rss && php createrss.php'
 
 #### Test Configuration
 
