@@ -34,7 +34,7 @@ Add the createrss.php to your crontab.  I suggest running this once a day.  Old 
 
 For 12.04 and Wheezy
 
-'0  0    * * *   root    cd /var/www/rss && php createrss.php`
+`0  0    * * *   root    cd /var/www/rss && php createrss.php`
 
 For 14.04 and Jessie
 
