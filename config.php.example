@@ -30,4 +30,7 @@
 	
 	// Verify an SQL Backup
 	//Module_VerifySQLBackup($StatusFeed, $ServerName, $location, "dbname-sqlbkp");	
+	
+	// Check BackupPC for old Hosts
+	//Module_BackupPC($StatusFeed, $ServerName, "http://xxx.xxx.xxx.xxx/backuppc/index.cgi?action=summary", "user", "password", older_than);	
 ?>
