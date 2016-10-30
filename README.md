@@ -44,27 +44,37 @@ For 14.04 and Jessie
 
 Run `php createrss.php` from the command line.  You can watch the output and see if there are any errors.
 
-#### Modules
-# aptcheck.php
+# Modules
+#### aptcheck.php
 * Check to see if there are any Ubuntu updates
-# aptupdate.php
+
+#### aptupdate.php
 * Run apt-get dist-ugprade
-# backuppc.php
+
+#### backuppc.php
 * Check to see if there are any hosts in BackupPC that are older than the specified limit
-# clamscan.php
+
+#### clamscan.php
 * Scan directory for viruses
-# createsqlbackup.php
+
+#### createsqlbackup.php
 * Create a backup of an SQL Database
-# diskspace.php
+
+#### diskspace.php
 * Check Disk Space
-# freshclam.php
+
+#### freshclam.php
 * Update ClamScan Virus scanner
-# rebootcheck.php
+
+#### rebootcheck.php
 * Check to see if a reboot is required
-# selfcheckupdate.php
+
+#### selfcheckupdate.php
 * Update ubuntu-rss-status from github
-# verifysqlbackup.php
+
+#### verifysqlbackup.php
 * Verify the SQL backup is valid
-# zpool.php
+
+#### zpool.php
 * Check for ZFS Zpool Errors
 
