@@ -4,11 +4,13 @@ Generate a Status RSS Feed for your Ubuntu Server.  This was created so that iss
 
 # Prerequisites
 
-Run the following command to get the required software to run ubuntu-rss-status for: Ubuntu 12.04, Ubuntu 14.04, Raspbian Wheezy, Raspbian Jessie
+Run the following command to get the required software to run ubuntu-rss-status
+
+<b>Ubuntu 12.04, Ubuntu 14.04, Raspbian Wheezy, Raspbian Jessie</b>
 
 `apt-get install apache2 php5 update-notifier-common git`
 
-Run the following command to get the required software to run ubuntu-rss-status for: Ubuntu 16.04
+<b>Ubuntu 16.04</b>
 
 `apt-get install apache2 php update-notifier-common git`
 
