@@ -6,7 +6,10 @@
 	
 	// Check for Updates for Linux
 	//Module_AptCheck($StatusFeed, $ServerName);
-	
+    
+	// Automatically autoremove packages that aren't needed
+	// Module_AptAutoRemove($StatusFeed, $ServerName);
+    
 	// Check for Disk Space Free
 	//Module_CheckDiskSpace($StatusFeed, $ServerName, "/", 90);
 	
