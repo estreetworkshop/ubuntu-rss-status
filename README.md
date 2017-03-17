@@ -51,6 +51,9 @@ Run `php createrss.php` from the command line.  You can watch the output and see
 #### aptupdate.php
 * Run apt-get dist-ugprade
 
+#### aptautoremove.php
+* Run apt-get remove to remove any unused packages
+
 #### backuppc.php
 * Check to see if there are any hosts in BackupPC that are older than the specified limit
 
