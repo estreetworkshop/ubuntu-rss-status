@@ -9,7 +9,11 @@
     
 	// Automatically autoremove packages that aren't needed
 	// Module_AptAutoRemove($StatusFeed, $ServerName);
-    
+    	
+	// Check for SSL Certificates that may be close to expiring
+	// Module_CheckSSLCert($StatusFeed, $ServerName, $CertLocation      , $ExpireDays)
+	// Module_CheckSSLCert($StatusFeed, $ServerName, "/path/to/cert.pem", 7          )
+	
 	// Check for Disk Space Free
 	//Module_CheckDiskSpace($StatusFeed, $ServerName, "/", 90);
 	
