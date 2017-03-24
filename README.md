@@ -81,3 +81,6 @@ Run `php createrss.php` from the command line.  You can watch the output and see
 #### zpool.php
 * Check for ZFS Zpool Errors
 
+#### checksslcert.php
+* Check for SSL Certificate expiration.  Must have openssl installed
+
